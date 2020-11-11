@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Purple USA</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div id="purpleUsaMap"></div>
+  <div id="source">
+    <h3>Source</h3>
+    <p>GeoJSON: <a href="https://eric.clst.org/tech/usgeojson/">https://eric.clst.org/tech/usgeojson</a> The 5m version
+      was taken, to not have a 22Mo data file</p>
+    <p>Election data: <a
+        href="https://github.com/MEDSL/election_night2020/blob/main/results/leip_natl_data.csv">https://github.com/MEDSL/election_night2020/blob/main/results/leip_natl_data.csv</a>
+      There are some error, with the counties ID and sometime no data</p>
+    <p>And thanks to Leaflet for the best Map JS library <a href="https://leafletjs.com/">https://leafletjs.com/</a></p>
+  </div>
+</body>
+
+<script type="text/javascript" src="../data/geoJson_usa_counties_5m.js"></script>
+<!-- <script type="text/javascript" src="../data/geoJsonMerge.js"></script> -->
+<script type="text/javascript" src="../data/geoJsonMergeWithName.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>

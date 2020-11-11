@@ -1,0 +1,12 @@
+{
+  "name": "purpleusa",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "scripts": {
+    "merge": "node script/mergeData.js"
+  },
+  "dependencies": {
+    "xlsx": "^0.16.8"
+  }
+}
